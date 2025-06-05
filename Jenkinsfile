@@ -9,7 +9,7 @@ pipeline {
                 git branch: 'main', url: 'https://github.com/FredericBellard/TP_Landingpage_deployment_cda.git'
             }
         }
-        stage{'contrôle qualité'} {
+        stage('contrôle qualité') {
             steps{
                 sh """
                sonar-scanner \
